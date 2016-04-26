@@ -13,20 +13,39 @@
  	var orange_count = 0;
 
 
- 	$('#blue').on('click',function(){
+ 	$('#blue_plus').on('click',function(){
  		blue_count+=1;
  		$('#n_blue').text(blue_count);
  		caculateDamage();
  	})
 
- 	$('#purple').on('click',function(){
+ 	$('#purple_plus').on('click',function(){
  		purple_count+=1;
  		$('#n_purple').text(purple_count);
  		caculateDamage();
  	})
 
- 	$('#orange').on('click',function(){
+ 	$('#orange_plus').on('click',function(){
  		orange_count+=1;
+ 		$('#n_orange').text(orange_count);
+ 		caculateDamage();
+ 	})
+
+
+ 	$('#blue_minus').on('click',function(){
+ 		blue_count-=1;
+ 		$('#n_blue').text(blue_count);
+ 		caculateDamage();
+ 	})
+
+ 	$('#purple_minus').on('click',function(){
+ 		purple_count-=1;
+ 		$('#n_purple').text(purple_count);
+ 		caculateDamage();
+ 	})
+
+ 	$('#orange_minus').on('click',function(){
+ 		orange_count-=1;
  		$('#n_orange').text(orange_count);
  		caculateDamage();
  	})
