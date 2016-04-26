@@ -50,8 +50,14 @@
  	}
 
  	function caculateDamage(){
- 		total_damage = blue_count*(2+ (purple_count*2)) + orange_count*(2+ blue_count+ purple_count + (purple_count*2))
+ 		total_fish = blue_count + purple_count + orange_count;
+ 		if (total_fish <= 7) {
+ 			total_damage = blue_count*(2+ (purple_count*2)) + orange_count*(2+ blue_count+ purple_count + orange_count-1 +(purple_count*2))
  		$('#total_damage').text(total_damage);
+ 	} else{
+ 		$('#total_damage').text("30~44");
+ 	};
+ 		
  	}
 
 
